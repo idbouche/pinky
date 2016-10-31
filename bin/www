@@ -8,6 +8,10 @@ var app = require('../app');
 var debug = require('debug')('socialNetwork:server');
 var http = require('http');
 
+var mongo = require('mongodb');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/socialNetwork');
+
 /**
  * Get port from environment and store in Express.
  */
